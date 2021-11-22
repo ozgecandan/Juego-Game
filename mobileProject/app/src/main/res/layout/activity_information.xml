@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.dell.mobileproject.information">
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="605dp"
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="JUEGO GAME"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonback"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="27dp"
+            android:background="?android:attr/homeAsUpIndicator"
+            android:backgroundTint="@android:color/holo_orange_light" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_alignBottom="@+id/next"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/infobir" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonback"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="63dp"
+            android:layout_toEndOf="@+id/previous"
+            android:layout_toRightOf="@+id/previous"
+            android:background="@android:color/holo_green_light"
+            android:onClick="next"
+            android:text="next"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="previous"
+            android:text="previous"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
